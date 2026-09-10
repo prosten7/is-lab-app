@@ -12,6 +12,10 @@ WORKDIR /app
 
 COPY --from=build /app/publish ./
 
+RUN useradd --system --no-create-home --shell /usr/sbin/nologin isapp \
+    && chown -R isapp:isapp /app
+USER isapp
+
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://0.0.0.0:8080
 
