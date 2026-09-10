@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
 
   app:
-    image: isapp:lab8
+    image: ghcr.io/prosten7/is-lab-app:${APP_TAG:-latest}
     container_name: is-app
     depends_on:
       - mssql
