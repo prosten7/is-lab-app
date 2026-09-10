@@ -8,7 +8,7 @@
 |---|---|
 | Каталог деплоя | `/home/deployer/deploy/is-stack` |
 | Пользователь деплоя | `deployer` (входит в группу `docker`) |
-| Образ приложения | `ghcr.io/kaikaysome/is-lab-app` |
+| Образ приложения | `ghcr.io/prosten7/is-lab-app` |
 | Каталог резервных копий | `/opt/backups/mssql` |
 | Скрипт резервного копирования | `/usr/local/bin/islab-backup.sh` |
 
